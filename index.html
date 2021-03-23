@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="css/styles.css">
 	<style>
 	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
@@ -17,17 +18,18 @@
 		</header>
 
 		<nav>
-			<p>
-				<a href="#Hébergements" id="ancrehebergement">Hébergements</a> <!-- ancre vers la partie hébergements-->
-				<a href="#Activités" id="ancreactivites">Activités</a> <!-- ancre vers la partie activités-->
+			<div class="ancres">
+				<a href="#listehebergements" id="ancrehebergement">Hébergements</a> <!-- ancre vers la partie hébergements-->
+				<a href="#listeactivites" id="ancreactivites">Activités</a> <!-- ancre vers la partie activités-->
+			</div>
+			<div class="inscription">
 				<a href="#" id="inscription">S'inscrire</a> <!-- renvoie vers page fictive d'inscription-->
-			</p>
+			</div>
 		</nav>
 
 			<section class="selection"> 
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				En plein centre ville ou en pleine nature
-
 				<p id="searchbox">
 					<form method = "post" action="traitement.php">
 						<img src="images/icones/map-marker-alt.svg" alt="pointrepere" class="pointrepere"/>
@@ -35,25 +37,23 @@
 						<input type="submit" id="submitbutton" name="submit" value="Rechercher"/>
 					</form>
 				</p>
-
 				<p class="filtres">
 					<form method = "post" action="traitement.php">
-						<strong>Filtres &ensp; </strong>
+						<div id="titrefiltre">Filtres</div>
 						<div id="filtreeconomie">
-							<img src="images/icones/money-bill-wave-solid.svg" alt="bill" class="iconefiltre"/><input type="checkbox" name="economique" id="economique"/><LABEL FOR="economique"><span> <strong>Économique</strong></span></LABEL>
+							<img src="images/icones/money-bill-wave-solid.svg" alt="bill" class="iconefiltre"/><input type="checkbox" name="economique" id="economique"/><LABEL FOR="economique"> <strong>Économique</strong></LABEL>
 						</div>
 						<div id="filtrefamille">
-							<img src="images/icones/child.svg" alt="child" class="iconefiltre"/><input type="checkbox" name="familial" id="familial"/><LABEL FOR="familial"><span> <strong>Familial </strong></span></LABEL>
+							<img src="images/icones/child.svg" alt="child" class="iconefiltre"/><input type="checkbox" name="familial" id="familial"/><LABEL FOR="familial"><strong>Familial </strong></LABEL>
 						</div>
 						<div id="filtreromantique">
-							<img src="images/icones/heart.svg" alt="heart" class="iconefiltre"/><input type="checkbox" name="romantique" id="romantique"/><LABEL FOR="romantique"><span> <strong>Romantique</strong></span></LABEL>
+							<img src="images/icones/heart.svg" alt="heart" class="iconefiltre"/><input type="checkbox" name="romantique" id="romantique"/><LABEL FOR="romantique"><strong>Romantique</strong></LABEL>
 						</div>
 						<div id="filtreanimaux">
-							<img src="images/icones/dog.svg" alt="dog" class="iconefiltre"/><input type="checkbox" name="Animaux" id="animaux"/><LABEL FOR="animaux"><span><strong>Animaux autorisés </strong></span></LABEL>
+							<img src="images/icones/dog.svg" alt="dog" class="iconefiltre"/><input type="checkbox" name="Animaux" id="animaux"/><LABEL FOR="animaux"><strong>Animaux autorisés </strong></LABEL>
 						</div>
 					</form>
-				</p><br/>
-
+				</p>
 				<p>
 					<img src="images/icones/info-circle.svg" alt="info" id="info"/> Plus de 500 logements disponibles dans cette ville
 				</p><br/>
@@ -61,12 +61,12 @@
 
 			<section id="sectionhebergements">
 
-					<div class="listehebergements"> 
+					<div id="listehebergements"> 
 						<h2 class="titrehebergement">Hébergements à Marseille</h2>
 
-						<div id="image_hebergement1">
+						<div id="carte_hebergement1">
 							<a href="pagehebergemen1.html">
-								<img src="images/smallhebergement/image1.jpg" alt="chambre" class="chambre"/>
+								<img src="images/smallhebergement/image1.jpg" alt="chambre" class="imagechambre"/>
 							</a>
 								<div id="hebergement1_description">
 									<strong>Auberge la Cannebière </strong><br/>Nuit à partir de <strong>25€</strong><br/>
@@ -79,9 +79,9 @@
 						</div>
 
 
-						<div id="image_hebergement2">
+						<div id="carte_hebergement2">
 								<a href="pagehebergement2.html">
-									<img src="images/smallhebergement/image2.jpg" alt="chambre" class="chambre"/>
+									<img src="images/smallhebergement/image2.jpg" alt="chambre" class="imagechambre"/>
 								</a>
 								<div id="hebergement2_description">
 									<strong>Hôtel du port </strong><br/>Nuit à partir de 52€<br/>
@@ -94,10 +94,10 @@
 
 						</div>
 
-						<div id="image_hebergement3">
+						<div id="carte_hebergement3">
 
 							<a href="pagehebergement3.html">
-								<img src="images/smallhebergement/image3.jpg" alt="chambre" class="chambre"/>
+								<img src="images/smallhebergement/image3.jpg" alt="chambre" class="imagechambre"/>
 							</a>
 								<div id="hebergement3_description">
 									<strong>Hôtel Les mouettes </strong><br/>Nuit à partir de 76€<br/>
@@ -110,9 +110,9 @@
 
 						</div>
 
-						<div id="image_hebergement4">
+						<div id="carte_hebergement4">
 							<a href="pagehebergement4.html">
-								<img src="images/smallhebergement/image4.jpg" alt="chambre" class="chambre"/>
+								<img src="images/smallhebergement/image4.jpg" alt="chambre" class="imagechambre"/>
 							</a>
 								<div id="hebergement4_description">
 									<strong>Hôtel de la mer </strong><br/>Nuit à partir de 46€<br/>
@@ -125,9 +125,9 @@
 
 						</div>
 
-						<div id="image_hebergement5">
+						<div id="carte_hebergement5">
 							<a href="pagehebergement5.html">
-								<img src="images/smallhebergement/image5.jpg" alt="chambre" class="chambre"/>
+								<img src="images/smallhebergement/image5.jpg" alt="chambre" class="imagechambre"/>
 							</a>
 								<div id="hebergement5_description">
 									<strong>Auberge Le panier </strong><br/>Nuit à partir de <strong>23€</strong><br/>
@@ -140,9 +140,9 @@
 
 						</div>
 
-						<div id="image_hebergement6">
+						<div id="carte_hebergement6">
 							<a href="#">
-								<img src="images/smallhebergement/image6.jpg" alt="chambre" class="chambre"/>
+								<img src="images/smallhebergement/image6.jpg" alt="chambre" class="imagechambre"/>
 							</a>
 								<div id="hebergement6_description">
 									<strong>Hôtel chez Amina</strong><br/>Nuit à partir de 96€<br/>
@@ -166,13 +166,12 @@
 						<H2 class="titrepopulaire">Les plus populaires <img src="images/icones/chart-line-solid.svg" alt="chart-line" id="chart"/></H2> <br/>
 
 						<div id="cartechambre_populaire1" >
-								<a href="pagehebergemenpopulaire1.html">
+								<a href="#">
 									<img src="images/smallhebergement/aside1.jpg" alt="chambre" class="imagechambrepopulaire"/>
 								</a>
 
 								<div id="populaire1_description">
-									<h4>Hôtel le soleil du matin</h4>
-									Nuit à partir de 128 <strong> €</strong>
+									<strong>Hôtel le soleil du matin</strong><br/>Nuit à partir de 128€
 									<div class="etoilepopulaire1">
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
@@ -181,16 +180,14 @@
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
 									</div>
 								</div>
-
 						</div>
 
 						<div id=cartechambre_populaire2 >
-							<a href="pagehebergemenpopulaire2.html">
+							<a href="#">
 								<img src="images/smallhebergement/aside2.jpg" alt="chambre" class="imagechambrepopulaire"/>
 							</a>
-								<div id="cartepopulaire2_description">
-									<h4>Au coeur de l'eau Chambres d'hôtes</h4>
-									Nuit à partir de 71 <strong>€</strong>
+								<div id="populaire2_description">
+									<strong>Au coeur de l'eau Chambres d'hôtes</strong><br/>Nuit à partir de 71€
 									<div class="etoilepopulaire2">
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
@@ -198,17 +195,15 @@
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
 										<img src="images/icones/star-empty.svg" alt="etoilegrise" class="etoile"/>
 									</div>
-
 								</div>
 						</div>
 
 						<div id=cartechambre_populaire3> 
-							<a href="pagehebergemenpopulaire3.html">
+							<a href="#">
 								<img src="images/smallhebergement/aside3.jpg" alt="chambre" class="imagechambrepopulaire"/>
 							</a>
 								<div id="populaire3_description">
-									<h4>Hôtel tout Bleu et Blanc</h4>
-									Nuit à partir de 68 <strong>€</strong> 
+									<strong>Hôtel tout Bleu et Blanc</strong><br/>Nuit à partir de 68€
 									<div class="etoilepopulaire3">
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
 										<img src="images/icones/star-filled.svg" alt="etoilebleu" class="etoile"/>
@@ -280,30 +275,30 @@
 
 			<footer>
 					<div id="apropos">
-						<strong>A propos</strong><br><br/>
+						<strong>A propos</strong><br/>
 						<p>
-						Fonctionnement du site<br><br/>
-						Conditions générales de vente<br><br/>
-						Données et confidentialité<br><br/>
+						Fonctionnement du site<br/>
+						Conditions générales de vente<br/>
+						Données et confidentialité<br/>
 						</p>
 					</div>
 
 					<div id="noshebergements">
-						<strong>Nos hébergements</strong><br><br/>
+						<strong>Nos hébergements</strong><br/>
 						<p>
-						Charte qualité<br><br/>
-						Soumettre votre hôtel<br><br/>
+						Charte qualité<br/>
+						Soumettre votre hôtel<br/>
 						</p>
 					</div>
 
 					<div id="assistance">
-						<strong>Assistance</strong><br><br/>
+						<strong>Assistance</strong><br/>
 						<p>
-						Centre d'aide<br><br/>
-						Nous contacter<br><br/>
+						Centre d'aide<br/>
+						Nous contacter<br/>
 						</p>
 					</div>
-			</footer>>
+			</footer>
 	</div>
 </body>
 </html>
