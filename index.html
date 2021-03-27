@@ -11,33 +11,49 @@
 </head>
 <body>
 	<div id="bloc_page">
-		<header>
-			<P>
-				<img src="images/logo/logoreservia.svg" alt="logo" id="logo" />
-			</P>
+		<header id=headerdesktop>	
+			<img src="images/logo/logoreservia.svg" alt="logo" id="logo" />
+			<nav>
+				<div class="ancres">
+						<a href="#listehebergements" id="ancrehebergement">Hébergements</a> <!-- ancre vers la partie hébergements-->
+						<a href="#listeactivites" id="ancreactivites">Activités</a> <!-- ancre vers la partie activités-->
+				</div>
+				<div class="inscription">
+						<a href="#" id="inscription">S'inscrire</a> <!-- renvoie vers page fictive d'inscription-->
+				</div>
+				</nav>
 		</header>
 
-		<nav>
-			<div class="ancres">
-				<a href="#listehebergements" id="ancrehebergement">Hébergements</a> <!-- ancre vers la partie hébergements-->
-				<a href="#listeactivites" id="ancreactivites">Activités</a> <!-- ancre vers la partie activités-->
+		<header id=headermobile>
+			<div id="toppage">
+				<div><img src="images/logo/logoreservia.svg" alt="logo" id="logo" />
+				</div>
+				<div class="inscription">
+					<a href="#" id="inscription">S'inscrire</a> <!-- renvoie vers page fictive d'inscription-->
+				</div>
 			</div>
-			<div class="inscription">
-				<a href="#" id="inscription">S'inscrire</a> <!-- renvoie vers page fictive d'inscription-->
-			</div>
-		</nav>
+			<nav>
+				<div class="ancres">
+						<a href="#listehebergements" id="ancrehebergement">Hébergements</a> <!-- ancre vers la partie hébergements-->
+						<a href="#listeactivites" id="ancreactivites">Activités</a> <!-- ancre vers la partie activités-->
+				</div>
+				
+				</nav>
+		</header>
 
-			<section class="selection"> 
+		<section class="selection"> 
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-				En plein centre ville ou en pleine nature
-				<p id="searchbox">
+				<div id="soustitre">En plein centre ville ou en pleine nature </div>
+
+				<div id="searchbox">
 					<form method = "post" action="traitement.php">
 						<img src="images/icones/map-marker-alt.svg" alt="pointrepere" class="pointrepere"/>
 						<input type="search" id=searcharea name="searcharea" value="Marseille, France" onfocus/>
-						<input type="submit" id="submitbutton" name="submit" value="Rechercher"/>
+						<input type="submit" id="submitbuttondesktop" name="submit" value="Rechercher"/>
+						<input type="submit" id="submitbuttonmobile" name="submit"value/>
 					</form>
-				</p>
-				<p class="filtres">
+				</div>
+				<div class="filtres">
 					<form method = "post" action="traitement.php">
 						<div id="titrefiltre">Filtres</div>
 						<div id="filtreeconomie">
@@ -53,11 +69,11 @@
 							<img src="images/icones/dog.svg" alt="dog" class="iconefiltre"/><input type="checkbox" name="Animaux" id="animaux"/><LABEL FOR="animaux"><strong>Animaux autorisés </strong></LABEL>
 						</div>
 					</form>
-				</p>
+				</div>
 				<p>
 					<img src="images/icones/info-circle.svg" alt="info" id="info"/> Plus de 500 logements disponibles dans cette ville
 				</p><br/>
-			</section>
+		</section>
 
 			<section id="sectionhebergements">
 
