@@ -8,8 +8,7 @@ body
 
 #bloc_page
 {
-	margin-right: 5%;
-	margin-left: 5%;
+	margin:auto;
 }
 #headermobile
 {
@@ -204,7 +203,7 @@ width:23px;
 	 align-items: flex-start;
 	 justify-content: space-around;
 	 padding:20px;
-	 width:67%;
+	 width:70%;
 	 background-color:#e7e7e7;
 	 border: #e7e7e7 solid;
 	 border-radius:15px;
@@ -376,13 +375,8 @@ footer
 	
 }
 
-@media screen and (max-device-width:599px)
-
+@media screen and(min-width:320px)and(max-width:599px)
 {
-	#bloc_page
-	{
-	margin:0;
-	}
 	#headerdesktop
 	{
 		display: none;
@@ -391,14 +385,14 @@ footer
 	{
 		display:flex;
 		flex-direction: column;
-		justify-content: space-between;
+
 	}
 	#toppage
 	{
-	margin:5% 5% 0% 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 5px;
 	}
 	
 	nav
@@ -454,53 +448,53 @@ footer
 	{
 	display: none;
 	}
-
+	h1,.titrehebergement,.titreactivites,.titrepopulaire
+	{
+	font-size: 1.4em;
+	}
 	.selection
 	{
 		margin: 10px;
 	}
 	.filtres 
-{
+	{
 	display:flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-top:30px;
-}
-#titrefiltre
-{
+	margin-top:20px;
+	}
+	#titrefiltre
+	{
 	margin-bottom: 20px;
-}
+	}
 	#sectionhebergements
 	{
 		width: 100%;
-		margin: 0;
-		display: flex;
+		margin:0px;
 		flex-direction: column-reverse;
 	}
 
 	#listepopulaires
-	{
-		
+	{		
 	width: 100%;
-	margin:0px;
-	background:#F2F2F2;
+	margin: 0px;
+	background-color: #e7e7e7;
+	background-size: 110%;
 	border:hidden;
-	border-radius: none;
+	border-radius:0;
+	display: flex;
+	justify-content: flex-start;
 	}
 
 	#cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
 	{
-	width:93%;
+	width:95%;
+	padding-left:0;
 	}
-	#populaire1_description,#populaire2_description,#populaire3_description
-	{
-	
-	}
-
 
 	#listehebergements
 	{
-		background-color: transparent;
+		background-color:transparent;
 		border: none;
 		width:95%;
 	}
@@ -527,7 +521,7 @@ footer
 
 	#carteactivite1,#carteactivite2,#carteactivite3,#carteactivite4,#carteactivite5,#carteactivite6
 	{
-	width:95%;
+	width:90%;
 	margin: 0 0 15px 0px;
 	display:block;
 	justify-content: center;
