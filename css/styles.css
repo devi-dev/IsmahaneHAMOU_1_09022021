@@ -369,7 +369,6 @@ footer
 {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content:space-around;
 	align-items: top;
 	background-color:#F2F2F2;
