@@ -369,7 +369,6 @@ footer
 {
 	width: 100%;
 	display: flex;
-	justify-content:space-around;
 	align-items: top;
 	background-color:#F2F2F2;
 	padding: 10px;
@@ -377,7 +376,7 @@ footer
 
 #apropos,#noshebergements,#assistance
 {
-padding-right:30px;
+padding-right: 15%;
 padding-left: 20px;
 padding-top: 20px;
 line-height:30px; 	
