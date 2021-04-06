@@ -1,58 +1,58 @@
 /* Définition des polices personnalisées */
 body
 {
-	font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;
-	width: 100%;
-	margin:auto;
-	font-size: medium; 
+font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;
+width: 100%;
+margin:auto;
+font-size: medium; 
 }
 
 #bloc_page
 {
-	margin: 5px;
+margin: 5px;
 }
 #headermobile
 {
-	display: none;
+display: none;
 }
 #logo
 {
-	width:100px;
+width:100px;
 }
 
 a /* pour changer la mise en forme des liens*/
 {
-	text-decoration: none;
-	color: black;
+text-decoration: none;
+color: black;
 }
 strong
 {
-	font-weight: bold;
+font-weight: bold;
 }
 nav /* pour placer le menu de navigation à droite*/
 {
-	display: flex;
-	justify-content: flex-end;
+display: flex;
+justify-content: flex-end;
 }
 
 #ancrehebergement,#ancrehebergementmobile /* pour définir la nouvelle mise en forme l'ancre hebergement*/
 {
-	border-top:2px #0065fc solid;
-	padding-top:50px;
-	padding-right:20px;
-	color: #0065fc;
+border-top:2px #0065fc solid;
+padding-top:50px;
+padding-right:20px;
+color: #0065fc;
 }
 
 #ancreactivites,#ancreactivitesmobile
 {
-	color: grey;
-	padding-right: 20px;
+color: grey;
+padding-right: 20px;
 }
 
 #inscription,#inscriptionmobile
 {
-	font-weight: bold;
-	color: #0065fc;
+font-weight: bold;
+color: #0065fc;
 }
 
 .pointrepere
@@ -63,8 +63,8 @@ padding:2px;
 height:17px;
 width:23px;
 border: solid transparent 10px;
-	border-radius:14px 0 0 14px;
-	background-color:#F2F2F2; 
+border-radius:14px 0 0 14px;
+background-color:#F2F2F2; 
 }
 
 #submitbuttonmobile
@@ -76,11 +76,11 @@ display: none;
 {
 vertical-align:top;
 margin:0;
-	height:40px;
-	border: solid transparent 2px;
-	border-radius: 0 14px 14px 0;
-	background-color:#0065fc;
-	color: white;
+height:40px;
+border: solid transparent 2px;
+border-radius: 0 14px 14px 0;
+background-color:#0065fc;
+color: white;
 }
 
 #searcharea
@@ -90,16 +90,16 @@ margin:0;
 padding:0;
 width:150px;
 height:40px;
-	border: none;
-	border-top:solid #F2F2F2 1px;
-	border-bottom: solid #F2F2F2 1px;
+border: none;
+border-top:solid #F2F2F2 1px;
+border-bottom: solid #F2F2F2 1px;
 }
 
 #economique,#familial,#romantique,#animaux /* checkboxes - masque les cases des checkboxes dans la partie filtre*/
 {
-	width:0px;
-	visibility: hidden;
-	vertical-align: center;
+width:0px;
+visibility: hidden;
+vertical-align: center;
 }
 
 #filtreeconomie,#filtrefamille,#filtreromantique,#filtreanimaux /* mise en forme de chaque filtre*/
@@ -123,38 +123,38 @@ color: #0065fc;
 
 .iconefiltre /* mise en forme des icones de la partie filtre*/
 {
-		width:16px;
-		vertical-align: center;
-		border: transparent solid;
-		border-radius:50%;
-		padding:5px 5px 5px 5px;
-		width:18px;
-		height:18px;
-		background-color:#deebff;
+width:16px;
+vertical-align: center;
+border: transparent solid;
+border-radius:50%;
+padding:5px 5px 5px 5px;
+width:18px;
+height:18px;
+background-color:#deebff;
 }
 
 .filtres /* mise en forme du paragraphe de la partie filtre*/
 {
-	display:flex;
-	flex-direction: row;
-	align-items: center;
-	margin-top:30px;
+display:flex;
+flex-direction: row;
+align-items: center;
+margin-top:30px;
 }
 #titrefiltre
 {
-	margin:0 30px 20px 0;
-	font-weight: bold;
+margin:0 30px 20px 0;
+font-weight: bold;
 }
 
 #info /* mise en forme de l'icone information*/
 {
-	width: 20px;
+width: 20px;
 }
 
 .etoile /* mise en forme des icones étoiles*/
 {
-	width:13px;
-	padding:0px;
+width:13px;
+padding:0px;
 }
 
 #sectionhebergements /* mise en forme de la section comprenant les hébergements à marseille et les hébergements populaires*/
@@ -166,24 +166,24 @@ margin-bottom:10px;
 
 .titrehebergement,.titreactivites,.titrepopulaire 
 {
-	width: 100%;
-	margin-bottom:20px;
-	margin-top: 20px;
+width: 100%;
+margin-bottom:20px;
+margin-top: 20px;
 }
 
 #titleandgraph
-	{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 95%;
-	margin-bottom:20px;
-	}
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 95%;
+margin-bottom:20px;
+}
 
 .titrepopulaire 
 {
-	width: 100%;
-	margin-top: 15px;
+width: 100%;
+margin-top: 15px;
 }
 
 #chart
@@ -193,92 +193,91 @@ width:23px;
 
 .afficherplus
 {
-	margin-top:1%;
-	width: 100%;
+margin-top:1%;
+width: 100%;
 }
 
 #listehebergements
 {
-	 display: flex;
-	 flex-wrap: wrap;
-	 align-items: flex-start;
-	 justify-content: space-around;
-	 padding:20px;
-	 width:70%;
-	 background-color:#F2F2F2;
-	 border: #F2F2F2 solid;
-	 border-radius:15px;
-	 color: #000000;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-around;
+padding:20px;
+width:70%;
+background-color:#F2F2F2;
+border: #F2F2F2 solid;
+border-radius:15px;
+color: #000000;
 }
 
 #carte_hebergement1,#carte_hebergement2,#carte_hebergement3,#carte_hebergement4,#carte_hebergement5,#carte_hebergement6
 {
-	background-color: #fff;
-	border-radius: 25px;
-	overflow: hidden;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
-	margin-bottom: 30px;
-	border: 5px solid #fff;
+background-color: #fff;
+border-radius: 25px;
+overflow: hidden;
+box-shadow: 2px 2px 2px 2px #F2F2F2;
+margin-bottom: 30px;
+border: 4px solid #fff;
 }
 
 .imagechambre
 {
-	 width:270px;
-	 height:135px;
-	 object-fit:cover;
+width:270px;
+height:135px;
+object-fit:cover;
 }
 
 #hebergement1_description,#hebergement2_description,#hebergement3_description,#hebergement4_description,#hebergement5_description,#hebergement6_description
 {
-	font-size:1em;
-	line-height:25px;
-	padding: 10px;
-	text-align: left;
+font-size:1em;
+line-height:25px;
+padding: 10px;
+text-align: left;
 }
 
 #listepopulaires
 {
-	width:30%;
-	margin-left: 25px;
-	padding: 20px;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	background-color: #F2F2F2;
-	border: transparent solid;
-	border-radius: 10px;	
+width:30%;
+margin-left: 25px;
+padding: 20px;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+background-color: #F2F2F2;
+border: transparent solid;
+border-radius: 10px;	
 }
 #cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
 {
-	width:80%;
-	max-height:170px; 
-	display: flex;
-	background-color: #fff;
-	border:4px solid transparent;
-	border-radius: 25px;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
-	margin-bottom: 30px;
-	margin-left:15px;
-	overflow: hidden;
+width:80%;
+max-height:170px; 
+display: flex;
+background-color: #fff;
+border:4px solid transparent;
+border-radius: 25px;
+box-shadow: 2px 2px 2px 2px #F2F2F2;
+margin-bottom: 30px;
+margin-left:15px;
+overflow: hidden;
 }
 
 .imagechambrepopulaire
 {
-	max-width:130px;
-	height:100%;
-	object-fit: cover;
+max-width:130px;
+height:100%;
+object-fit: cover;
 }
 
 #populaire1_description,#populaire2_description,#populaire3_description
 {
-	display:flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-	font-size:1em;
-	line-height:25px;
-	padding: 10px;
-	
+display:flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+font-size:1em;
+line-height:25px;
+padding: 10px;
 }
 
 .etoilepopulaire1,.etoilepopulaire2,.etoilepopulaire3
@@ -289,37 +288,37 @@ display:flex;
 
 #listeactivites
 {
-	 width:100%;
-	 display: flex;
-	 flex-wrap: wrap;
-	 align-items: flex-start;
-	 justify-content: space-between;
-	 padding:20px;
-	 border-radius:15px;
+width:100%;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+padding:20px;
+border-radius:15px;
 }
 #colonne1,#colonne2,#colonne3,#colonne4
 {
-	height:100%;
+height:100%;
 }
 
 #carteactivite1,#carteactivite4,#carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
 {
-	background-color: #fff;
-	border: hidden;
-	border-radius: 25px;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
-	overflow: hidden;
-	margin-right: 20px;
-	margin-bottom:30px;
+background-color: #fff;
+border: hidden;
+border-radius: 25px;
+box-shadow: 2px 2px 2px 2px #F2F2F2;
+overflow: hidden;
+margin-right: 20px;
+margin-bottom:30px;
 }
 
 #carteactivite1,#carteactivite4 
 {
-	height:80%;
+height:80%;
 }
 #carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
 {
-	height:50%;
+height:50%;
  }
 
 .image_activites1,.image_activites4
@@ -358,19 +357,19 @@ object-fit:cover;
 
 .activite_description
 {
-	font-size:1em;
-	line-height:25px;
-	padding: 10px;
-	text-align: left;
+font-size:1em;
+line-height:25px;
+padding: 10px;
+text-align: left;
 }
 
 footer
 {
-	width: 100%;
-	display: flex;
-	align-items: flex-start;
-	background-color:#F2F2F2;
-	padding: 10px;
+width: 100%;
+display: flex;
+align-items: flex-start;
+background-color:#F2F2F2;
+padding: 10px;
 }
 
 #apropos,#noshebergements,#assistance
@@ -473,9 +472,9 @@ line-height:30px;
 	}
 	.imagechambrepopulaire
 	{
-	 width:200px;
-	 height:100%;
-	 object-fit:cover;
+	width:200px;
+	height:100%;
+	object-fit:cover;
 	}
 	#populaire1_description,#populaire2_description,#populaire3_description
 	{
@@ -501,7 +500,7 @@ line-height:30px;
 	#carte_hebergement1,#carte_hebergement2,#carte_hebergement3,#carte_hebergement4,#carte_hebergement5,#carte_hebergement6
 	{
 	background-color: #fff;
-	border: 5px solid transparent;
+	border: 4px solid transparent;
 	border-radius: 25px;
 	overflow: hidden;
 	box-shadow: 2px 2px 2px 2px #F2F2F2;
@@ -525,6 +524,7 @@ line-height:30px;
 	width:100%;
 	padding:0px;
 	justify-content:flex-start;
+	flex-wrap: wrap;
 	}
 	footer
 	{
@@ -540,7 +540,6 @@ line-height:30px;
 	{
 	display: none;
 	}
-
 	#headermobile
 	{
 	display:flex;
@@ -588,7 +587,7 @@ line-height:30px;
 	}
 	#searcharea
 	{
-	 width: 150px;
+	width: 150px;
 	}
 	#searchbox
 	{
@@ -619,7 +618,7 @@ line-height:30px;
 	}
 	.selection
 	{
-		margin: 10px;
+	margin: 10px;
 	}
 	.filtres 
 	{
