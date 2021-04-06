@@ -394,15 +394,24 @@ line-height:30px;
 	{
 	margin-top: 30px;
 	margin-bottom: 30px;
-	font-size: 1.3em; 
+	font-size: 1em; 
 	justify-content: flex-start;
-	font-weight: bold;
 	}
-
 	#ancrehebergement
 	{
 	border:none;
-	}	
+	padding-top: 0;
+	}
+	#ancrehebergement:hover,#ancreactivites:hover,#inscription:hover
+	{
+	padding:4px;
+	font-weight: bold;
+	color:#0065fc;
+	margin-right: 10px;
+	border:#0065fc solid 2px;
+	border-radius: 25px;
+	background-color:#DEEBFF;
+	}
 	#submitbuttonmobile	
 	{
 	height:40px;
@@ -524,7 +533,6 @@ line-height:30px;
 	width:100%;
 	padding:0px;
 	justify-content:flex-start;
-	flex-wrap: wrap;
 	}
 	footer
 	{
