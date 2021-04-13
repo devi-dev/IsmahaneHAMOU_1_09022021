@@ -3,13 +3,12 @@ body
 {
 font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;
 width: 100%;
-margin:auto;
 font-size: medium; 
 }
 
 #bloc_page
 {
-margin: 5px;
+margin: auto;
 }
 #headermobile
 {
@@ -380,15 +379,11 @@ padding-top: 20px;
 line-height:30px; 	
 }
 
-@media screen and (min-width:656px) and (max-width:1329px)
+@media screen and (min-width:1025px) and (max-width:1329px)
 {
-	#blocpage
-	{
-		width: 100%;
-	}
 	#headermobile
 	{
-		display:none;
+	display:none;
 	}
 	#headerdesktop
 	{
@@ -478,8 +473,8 @@ line-height:30px;
 	}
 	#cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
 	{
-	width:300px;
-	height: 200px;
+	/*width:300px;
+	height: 200px;*/
 	display: flex;
 	margin-bottom:20px;
 	}
@@ -522,9 +517,11 @@ line-height:30px;
 	}
 	.imagechambre
 	{
-	width:270px;
-	height:135px;
+	width:100%;
+	height:120px;
 	object-fit:cover;
+	object-position:center;
+	
 	}
 	#hebergement1_description,#hebergement2_description,#hebergement3_description,#hebergement4_description,#hebergement5_description,#hebergement6_description
 	{
@@ -748,5 +745,23 @@ line-height:30px;
 	display: flex;
 	flex-direction: column; 
 	padding: 10px;
+	}
+}
+@media screen and (max-width: 1024px)
+{
+	#listepopulaires aside #cartechambre_populaire1,#listepopulaires aside #cartechambre_populaire2,#listepopulaires aside #cartechambre_populaire3,
+	{
+		width: 100%;
+	}
+
+	#listepopulaires aside #cartechambre_populaire1 a,#listepopulaires aside #cartechambre_populaire2 a,#listepopulaires aside #cartechambre_populaire3 a, #listepopulaires aside #cartechambre_populaire1 #populaire1_description,#listepopulaires aside #cartechambre_populaire2 #populaire2_description,#listepopulaires aside #cartechambre_populaire3 #populaire3_description,
+
+	{
+		width: 50%;
+	}
+	#listepopulaires aside #cartechambre_populaire1 a img,#listepopulaires aside #cartechambre_populaire2 a img,#listepopulaires aside #cartechambre_populaire3 a img
+	{
+		width: 99%
+		max-width:100%;
 	}
 }
