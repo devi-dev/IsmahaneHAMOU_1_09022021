@@ -151,11 +151,6 @@ color: #0065fc;
 	width: 20px;
 }
 
-.etoile /* mise en forme des icones étoiles*/
-{
-	width:13px;
-	padding:0px;
-}
 
 #sectionhebergements /* mise en forme de la section comprenant les hébergements à marseille et les hébergements populaires*/
 {
@@ -221,13 +216,25 @@ width:23px;
 	border: 5px solid #fff;
 }
 
-.imagechambre
+#listehebergements #carte_hebergement1,#listehebergements #carte_hebergement2,#listehebergements #carte_hebergement3,#listehebergements #carte_hebergement4,#listehebergements #carte_hebergement5,#listehebergements #carte_hebergement6
 {
-	 width:100%;
-	 max-width:350px;
-	 height:140px;
-	 object-fit:cover;
+width: 30%;
+max-height:35%;
 }
+
+#listehebergements #carte_hebergement1 a,#listehebergements #carte_hebergement2 a,#listehebergements #carte_hebergement3 a,#listehebergements #carte_hebergement4 a,#listehebergements #carte_hebergement5 a,#listehebergements #carte_hebergement6 a,
+#listehebergements #carte_hebergement1 #hebergement1_description,#listehebergements #carte_hebergement2 #hebergement2_description,#listehebergements #carte_hebergement3 #hebergement3_description,#listehebergements #carte_hebergement4 #hebergement4_description,#listehebergements #carte_hebergement5 #hebergement5_description,#listehebergements #carte_hebergement6 #hebergement6_description
+{
+height: 20%;
+}
+
+#listehebergements #carte_hebergement1 a .imagechambre,#listehebergements #carte_hebergement2 a .imagechambre,#listehebergements #carte_hebergement3 a .imagechambre,#listehebergements #carte_hebergement4 a .imagechambre, #listehebergements #carte_hebergement5 a .imagechambre,#listehebergements #carte_hebergement6 a .imagechambre
+{
+width: 100%;
+max-height:160px;
+object-fit:cover;
+}
+
 
 #hebergement1_description,#hebergement2_description,#hebergement3_description,#hebergement4_description,#hebergement5_description,#hebergement6_description
 {
@@ -236,7 +243,11 @@ width:23px;
 	padding: 10px;
 	text-align: left;
 }
-
+.etoile /* mise en forme des icones étoiles*/
+{
+	width:13px;
+	padding:0px;
+}
 #listepopulaires
 {
 	width:30%;
@@ -265,9 +276,21 @@ width:23px;
 
 .imagechambrepopulaire
 {
-	max-width:230px;
-	height:100%;
-	object-fit: cover;
+ 	height:100%;
+  	object-fit: cover;
+ 	object-position: center;
+}
+#listepopulaires aside #cartechambre_populaire1 a,#listepopulaires aside #cartechambre_populaire2 a,#listepopulaires aside #cartechambre_populaire3 a,
+#listepopulaires aside #cartechambre_populaire1 #populaire1_description,#listepopulaires aside #cartechambre_populaire2 #populaire2_description,#listepopulaires aside #cartechambre_populaire3 #populaire3_description
+{
+width: 60%;
+}
+
+#listepopulaires aside #cartechambre_populaire1 a img,#listepopulaires aside #cartechambre_populaire2 a img,#listepopulaires aside #cartechambre_populaire3 a img 
+{
+		width: 99%;
+		max-width: 100%;
+
 }
 
 #populaire1_description,#populaire2_description,#populaire3_description
@@ -466,17 +489,12 @@ line-height:30px;
 	}
 	#cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
 	{
-	width:300px;
-	height: 200px;
+	/*width:300px;
+	height: 200px;*/
 	display: flex;
 	margin-bottom:20px;
 	}
-	.imagechambrepopulaire
-	{
-	 width:200px;
-	 height:100%;
-	 object-fit:cover;
-	}
+	
 	#populaire1_description,#populaire2_description,#populaire3_description
 	{
 	font-size:1em;
