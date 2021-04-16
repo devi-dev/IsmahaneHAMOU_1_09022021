@@ -2,7 +2,7 @@ body
 {
 	font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;/* Définition des polices personnalisées */
 
-	width: 100%;
+	width: 99%;
 	margin:auto;
 	font-size: medium; 
 }
@@ -319,12 +319,13 @@ display:flex;
 	 display: flex;
 	 flex-wrap: wrap;
 	 align-items: flex-start;
-	 justify-content: flex-start;
+	 justify-content: space-around;
 	 border-radius:15px;
 }
 #colonne1,#colonne2,#colonne3,#colonne4
 {
 	height:100%;
+	width: auto;
 }
 
 #carteactivite1,#carteactivite4,#carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
@@ -341,6 +342,7 @@ display:flex;
 #carteactivite1,#carteactivite4 
 {
 	height:80%;
+	
 }
 #carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
 {
@@ -732,21 +734,21 @@ line-height:30px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	display: block;
+	align-content: center;
+	justify-content: center;
 	}
 	
 	#carteactivite1,#carteactivite2,#carteactivite3,#carteactivite4,#carteactivite5,#carteactivite6
 	{
 	margin:0 0 15px 0;
 	padding: 0; 
-	width:95%;
+	width:90%;
 
 	}
 	.image_activites1,.image_activites2,.image_activites3,.image_activites4,.image_activites6
 	{
-	display: flex;
 	width: 100%;
-	max-height: 140px;
+	max-height: 200px;
 	object-fit:cover;
 	object-position:center;
 	}
@@ -754,7 +756,7 @@ line-height:30px;
 	{
 	display: flex;
 	width: 100%;
-	max-height: 140px;
+	max-height: 200px;
 	object-fit:cover;
 	object-position:top;
 	}
@@ -771,7 +773,8 @@ line-height:30px;
 	#listepopulaires aside #cartechambre_populaire1,
 	#listepopulaires aside #cartechambre_populaire2,
 	#listepopulaires aside #cartechambre_populaire3{
-		width: 95%;
+		width: 90%;
+
 	}
 
 	#listepopulaires aside #cartechambre_populaire1 a,
@@ -822,6 +825,8 @@ line-height:30px;
 	#colonne4{
 		    width: 100%;
 		    display: flex;
+		    flex-wrap: nowrap;
+		    align-content: stretch;
 		    justify-content: center;
 	}
 	#carteactivite5,
@@ -832,8 +837,8 @@ line-height:30px;
 	.image_activites6,
 	.image_activites5{
 	    width: 100%;
-	    height: 250px;
+	    height: auto;
+	    max-height: 200px;
 	    object-fit: cover;
-	    max-height: 100%;
 	}
 }
