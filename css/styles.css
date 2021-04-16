@@ -708,7 +708,6 @@ line-height:30px;
 	height:140px;
 	object-fit:cover;
 	object-position: center;
-	
 	}
 
 	#hebergement1_description,#hebergement2_description,#hebergement3_description,#hebergement4_description,#hebergement5_description,#hebergement6_description
@@ -732,9 +731,10 @@ line-height:30px;
 	#colonne1,#colonne2,#colonne3,#colonne4
 	{
 	width: 100%;
+	max-width: 100%;
 	margin: 0;
 	padding: 0;
-	align-content: center;
+	align-content: stretch;
 	justify-content: center;
 	}
 	
@@ -820,8 +820,19 @@ line-height:30px;
 		max-width: 100%;
 	}
 }
+@media screen and (min-width: 970px) and (max-width: 980px)
+{
+	#listeactivites #colonne3 #carteactivite4 a img
+	{
+		width: 100%;
+		max-width: 250px;
+		min-height: 200px;
+	}
 
-@media screen and (min-width: 970px) and (max-width: 1290px){
+
+}
+
+@media screen and (min-width: 970px) and (max-width: 1304px){
 	#colonne4{
 		    width: 100%;
 		    display: flex;
@@ -838,7 +849,9 @@ line-height:30px;
 	.image_activites5{
 	    width: 100%;
 	    height: auto;
-	    max-height: 200px;
+	    max-height: 250px;
 	    object-fit: cover;
 	}
 }
+
+	
