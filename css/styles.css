@@ -665,7 +665,7 @@ line-height:30px;
 	width: 100%;
 	margin:0px;
 	flex-direction: column-reverse;
-	justify-content: space-around;
+	justify-content: center;
 	}
 	#listepopulaires
 	{
@@ -673,26 +673,26 @@ line-height:30px;
 	margin: 0px;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
 	border: 0;
 	border-radius: 0;
 	padding:10px;
 	}
 	#cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
 	{
-	width:85%;
+	width:95%;
 	padding:0;
 	margin: 0 0 15px 0;
 	}
 
 	#listehebergements
 	{
+	width: 85%;
+	justify-content:center;
 	background-color:transparent;
 	border: none;
 	width:100%;
 	padding:10px;
-	justify-content:center;
+	
 	}
 	
 	#listehebergements #carte_hebergement1,#listehebergements #carte_hebergement2,#listehebergements #carte_hebergement3,#listehebergements #carte_hebergement4,#listehebergements #carte_hebergement5,#listehebergements #carte_hebergement6
@@ -834,7 +834,7 @@ line-height:30px;
 
 }
 
-@media screen and (min-width: 970px) and (max-width: 1303px){
+@media screen and (min-width: 970px) and (max-width: 1324px){
 	#colonne4{
 		    width: 100%;
 		    display: flex;
