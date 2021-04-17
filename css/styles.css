@@ -1,10 +1,10 @@
 body
 {
 	font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;/* Définition des polices personnalisées */
-
-	width: 99%;
+	width: 100%;
+	overflow-x:hidden;
 	margin:auto;
-	font-size: medium; 
+	font-size: 1em; 
 }
 
 #bloc_page
@@ -155,30 +155,22 @@ color: #0065fc;
 #sectionhebergements /* mise en forme de la section comprenant les hébergements à marseille et les hébergements populaires*/
 {
 display: flex;
+align-items: flex-start;
 width: 100%;
 margin-bottom:10px;
 }
 
-.titrehebergement,.titreactivites,.titrepopulaire 
+.titrehebergement,.titreactivites
 {
 	width: 100%;
-	margin-bottom:20px;
-	margin-top: 20px;
+	
 }
-
 #titleandgraph
-	{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 95%;
-	margin-bottom:20px;
-	}
-
-.titrepopulaire 
 {
-	width: 100%;
-	margin-top: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 95%;
 }
 
 #chart
@@ -188,7 +180,7 @@ width:23px;
 
 .afficherplus
 {
-	margin-top:1%;
+	margin-top:5px;
 	width: 100%;
 }
 
@@ -325,7 +317,15 @@ display:flex;
 #colonne1,#colonne2,#colonne3,#colonne4
 {
 	height:100%;
-	width: auto;
+	width: 20%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+#colonne1,#colonne4
+{
+
 }
 
 #carteactivite1,#carteactivite4,#carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
@@ -335,54 +335,35 @@ display:flex;
 	border-radius: 25px;
 	box-shadow: 2px 2px 2px 2px #F2F2F2;
 	overflow: hidden;
-	margin-right: 20px;
-	margin-bottom:30px;
 }
 
-#carteactivite1,#carteactivite4 
+#carteactivite1,#carteactivite4
 {
-	height:80%;
+	height:100%;
+	width: 100%;
 	
 }
 #carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
 {
 	height:50%;
+	max-width: 100%;
  }
 
 .image_activites1,.image_activites4
 {
-width: 300px;
-height: 450px;
+width: 100%;
+height: 100%;
+max-height: 450px;
 object-fit:cover;
 }
 
-.image_activites2
+.image_activites2,.image_activites3,.image_activites5,.image_activites6
 {
-width: 300px;
-max-height: 210px;
+width: 100%;
+height: 100%;
+max-height: 300px;
 object-fit:cover;
 }
-
-.image_activites3
-{
-width: 300px;
-max-height: 160px;
-object-fit:cover;
-}
-.image_activites5
-{
-width: 300px;
-max-height: 170px;
-object-fit:cover;
-}
-
-.image_activites6
-{
-width: 300px;
-max-height: 200px;
-object-fit:cover;
-}
-
 .activite_description
 {
 	font-size:1em;
@@ -398,6 +379,7 @@ footer
 	align-items: flex-start;
 	background-color:#F2F2F2;
 	padding: 10px;
+	margin:0;
 }
 
 #apropos,#noshebergements,#assistance
@@ -824,14 +806,43 @@ line-height:30px;
 }
 @media screen and (min-width: 970px) and (max-width: 1000px)
 {
+	#colonne1
+	{
+		    width:50%;
+		    display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+	}
+	#listeactivites #colonne1 #carteactivite1
+	{
+		width: calc(100% - 40px);
+	}
+	#listeactivites #colonne1 #carteactivite1 a img
+	{
+		width: 100%;
+	    height: 90%;
+	    max-height: 100%;
+	    object-fit: cover;
+	}
+	#colonne3
+	{
+		    width: 100%;
+		    display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+	}
+
+	#listeactivites #colonne3 #carteactivite4
+	{
+		width: calc(100% - 80px);
+	}
 	#listeactivites #colonne3 #carteactivite4 a img
 	{
 		width: 100%;
-		max-width: 260px;
-		min-height: 200px;
+	    height: auto;
+	    max-height: 250px;
+	    object-fit: cover;
 	}
-
-
 }
 
 @media screen and (min-width: 970px) and (max-width: 1324px){
