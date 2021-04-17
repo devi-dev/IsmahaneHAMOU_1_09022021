@@ -704,10 +704,10 @@ line-height:30px;
 	.imagechambre
 	{
 	width:100%;
-	max-width: 680px;
+	max-width: 720px;
 	height:140px;
 	object-fit:cover;
-	object-position: center;
+	object-position: bottom;
 	}
 
 	#hebergement1_description,#hebergement2_description,#hebergement3_description,#hebergement4_description,#hebergement5_description,#hebergement6_description
@@ -718,23 +718,23 @@ line-height:30px;
 	{
 	width: 100%;
 	margin:0;
-	justify-content:space-around;
+	justify-content:center;
 	padding: 0;
 	}
 	#listeactivites
 	{
 	width:100%;
+	justify-content: center;
 	margin:0;
 	padding: 0;
 	}
 
 	#colonne1,#colonne2,#colonne3,#colonne4
 	{
-	width: 100%;
-	max-width: 100%;
+	width: 95%;
+	display: block;
 	margin: 0;
 	padding: 0;
-	align-content: stretch;
 	justify-content: center;
 	}
 	
@@ -742,21 +742,23 @@ line-height:30px;
 	{
 	margin:0 0 15px 0;
 	padding: 0; 
-	width:90%;
+	
 
 	}
 	.image_activites1,.image_activites2,.image_activites3,.image_activites4,.image_activites6
 	{
 	width: 100%;
-	max-height: 200px;
-	object-fit:cover;
+	max-width: 720px;
+	height: 250px;
+	object-fit: cover;
 	object-position:center;
 	}
 	.image_activites5
 	{
 	display: flex;
 	width: 100%;
-	max-height: 200px;
+	max-width: 720px;
+	height: 200px;
 	object-fit:cover;
 	object-position:top;
 	}
@@ -820,24 +822,23 @@ line-height:30px;
 		max-width: 100%;
 	}
 }
-@media screen and (min-width: 970px) and (max-width: 980px)
+@media screen and (min-width: 970px) and (max-width: 1000px)
 {
 	#listeactivites #colonne3 #carteactivite4 a img
 	{
 		width: 100%;
-		max-width: 250px;
+		max-width: 260px;
 		min-height: 200px;
 	}
 
 
 }
 
-@media screen and (min-width: 970px) and (max-width: 1304px){
+@media screen and (min-width: 970px) and (max-width: 1303px){
 	#colonne4{
 		    width: 100%;
 		    display: flex;
 		    flex-wrap: nowrap;
-		    align-content: stretch;
 		    justify-content: center;
 	}
 	#carteactivite5,
