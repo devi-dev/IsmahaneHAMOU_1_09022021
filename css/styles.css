@@ -1,8 +1,7 @@
 body
 {
-	font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;/* Définition des polices personnalisées */
 	margin:auto;
-	
+	font-family: 'Raleway','Trebuchet MS', Arial, sans-serif;/* Définition des polices personnalisées */
 	font-size: 1em; 
 }
 #bloc_page
@@ -37,7 +36,7 @@ nav /* pour placer le menu de navigation à droite*/
 #ancrehebergement,#ancrehebergementmobile /* pour définir la nouvelle mise en forme l'ancre hebergement*/
 {
 	border-top:2px #0065fc solid;
-	padding-top:50px;
+	padding-top:30px;
 	padding-right:20px;
 	color: #0065fc;
 }
@@ -155,8 +154,8 @@ color: #0065fc;
 {
 display: flex;
 align-items: flex-start;
-width: calc(100% - 20px);
 justify-content: space-between;
+width: 100%;
 margin-bottom:10px;
 }
 
@@ -190,11 +189,12 @@ width:23px;
 	 flex-wrap: wrap;
 	 align-items: flex-start;
 	 justify-content:space-around;
-	 width:70%;
-	 height: 100%;
+	 padding: 10px;
+	 width: 65%;	 
+	 height: 700px;
 	 background-color:#F2F2F2;
 	 border: #F2F2F2 solid;
-	 border-radius:15px;	 	
+	 border-radius:15px;
 }
 
 #carte_hebergement1,#carte_hebergement2,#carte_hebergement3,#carte_hebergement4,#carte_hebergement5,#carte_hebergement6
@@ -202,26 +202,19 @@ width:23px;
 	background-color: #fff;
 	border-radius: 25px;
 	overflow: hidden;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
-	margin-bottom: 30px;
+	box-shadow: 2px 2px 2px 2px #e2e2e2;
 	border: 5px solid #fff;
 	width: 30%;
+	max-height: 100%;
+	margin:auto;
 }
-
-#listehebergements #carte_hebergement1 a,#listehebergements #carte_hebergement2 a,#listehebergements #carte_hebergement3 a,#listehebergements #carte_hebergement4 a,#listehebergements #carte_hebergement5 a,#listehebergements #carte_hebergement6 a,
-#listehebergements #carte_hebergement1 #hebergement1_description,#listehebergements #carte_hebergement2 #hebergement2_description,#listehebergements #carte_hebergement3 #hebergement3_description,#listehebergements #carte_hebergement4 #hebergement4_description,#listehebergements #carte_hebergement5 #hebergement5_description,#listehebergements #carte_hebergement6 #hebergement6_description
-{
-height: 20%;
-}
-
 #listehebergements #carte_hebergement1 a .imagechambre,#listehebergements #carte_hebergement2 a .imagechambre,#listehebergements #carte_hebergement3 a .imagechambre,#listehebergements #carte_hebergement4 a .imagechambre, #listehebergements #carte_hebergement5 a .imagechambre,#listehebergements #carte_hebergement6 a .imagechambre
 {
 width: 100%;
-max-height:160px;
+max-height:120px;
 object-fit:cover;
 object-position: center;
 }
-
 
 #hebergement1_description,#hebergement2_description,#hebergement3_description,#hebergement4_description,#hebergement5_description,#hebergement6_description
 {
@@ -238,60 +231,36 @@ object-position: center;
 
 #listepopulaires
 {
-	width: calc(100% - (70% + 25px));
-	height: 100%;
-	margin-left: 25px;
-	display: flex;	
-	justify-content: center;
-	align-items: stretch;
-	background-color: #F2F2F2;
-	border: transparent solid;
-	border-radius: 15px;	
+display: flex;
+align-items: flex-start;
+flex-flow: column wrap;
+width: 28%;
+height: 700px;
+padding: 10px;
+background-color: #F2F2F2;
+border: transparent solid;
+border-radius: 15px;
 }
 #cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
 {
+	height: 25%;
+	width: auto; 
 	display: flex;
 	background-color: #fff;
-	border:4px solid transparent;
+	border:4px solid #fff;
 	border-radius: 25px;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
-	margin-bottom: 30px;
+	box-shadow: 2px 2px 2px 2px #e2e2e2;
 	overflow: hidden;
+	margin:auto;
 }
 
-#listepopulaires aside #cartechambre_populaire1,#listepopulaires aside #cartechambre_populaire2,#listepopulaires aside #cartechambre_populaire3{
-		width: 90%;
-
-	}
-
-	#listepopulaires aside #cartechambre_populaire1 a,
-	#listepopulaires aside #cartechambre_populaire2 a,
-	#listepopulaires aside #cartechambre_populaire3 a,
-	#listepopulaires aside #cartechambre_populaire1 #populaire1_description,
-	#listepopulaires aside #cartechambre_populaire2 #populaire2_description,
-	#listepopulaires aside #cartechambre_populaire3 #populaire3_description{
-		width: 65%;
-	}
-
-	#listepopulaires aside #cartechambre_populaire1 a img,
-	#listepopulaires aside #cartechambre_populaire2 a img,
-	#listepopulaires aside #cartechambre_populaire3 a img
-	{
-
-	height:100%;
-  	object-fit: cover;
- 	object-position: center;
-	}
-#listepopulaires aside #cartechambre_populaire1 a,#listepopulaires aside #cartechambre_populaire2 a,#listepopulaires aside #cartechambre_populaire3 a,
-#listepopulaires aside #cartechambre_populaire1 #populaire1_description,#listepopulaires aside #cartechambre_populaire2 #populaire2_description,#listepopulaires aside #cartechambre_populaire3 #populaire3_description
+#listepopulaires #cartechambre_populaire1 a img,#listepopulaires #cartechambre_populaire2 a img,#listepopulaires #cartechambre_populaire3 a img 
 {
-}
-
-#listepopulaires aside #cartechambre_populaire1 a img,#listepopulaires aside #cartechambre_populaire2 a img,#listepopulaires aside #cartechambre_populaire3 a img 
-{
-		width: 99%;
-		max-width: 100%;
-
+height:100%;
+max-height: 200px;
+max-width:100%;
+object-fit:cover;
+object-position: center;
 }
 
 #populaire1_description,#populaire2_description,#populaire3_description
@@ -299,12 +268,11 @@ object-position: center;
 	display:flex;
 	flex-direction: column;
 	align-items: flex-start;
-	justify-content: space-between;; 
+	justify-content: space-between; 
 	font-size:1em;
 	line-height:25px;
-	padding-left: 20px;
-	padding-right: 20px;
-	
+	width:80%;
+	padding: 10px;		
 }
 
 .etoilepopulaire1,.etoilepopulaire2,.etoilepopulaire3
@@ -315,22 +283,24 @@ display:flex;
 
 #listeactivites
 {
-	 width:calc(100%-30px);
+	 width:100%;
+	 height: 100%;
 	 padding:10px;
 	 display: flex;
 	 flex-wrap: wrap;
-	 align-items: flex-start;
-	 justify-content: space-around;
+	 align-content: space-around;
+	 
 	 border-radius:15px;
 }
 #colonne1,#colonne2,#colonne3,#colonne4
 {
-	height:100%;
-	width:22%;
+	height:auto;
+	width:20%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content:flex-start;
 	align-items: flex-start;
+	margin: auto;
+	
 }
 
 #carteactivite1,#carteactivite4,#carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
@@ -338,7 +308,7 @@ display:flex;
 	background-color: #fff;
 	border: hidden;
 	border-radius: 25px;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
+	box-shadow: 2px 2px 2px 2px #e2e2e2;
 	overflow: hidden;
 	margin-bottom: 10%;
 }
@@ -401,7 +371,12 @@ padding-top: 20px;
 line-height:30px; 	
 }
 
-@media screen and (min-width:759px) and (max-width:1324px)
+@media screen and (min-width: 1025px) and (max-width: 1200px)
+{
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px)
 {
 	#headermobile
 	{
@@ -456,7 +431,7 @@ line-height:30px;
 	{
 	font-size: 1.4em;
 	}
-	aside
+
 	{
 	width: 100%;
 	display: flex;
@@ -498,6 +473,30 @@ line-height:30px;
 	padding:5px;
 	text-align: left;
 	}
+
+	#listepopulaires #cartechambre_populaire1,
+	#listepopulaires #cartechambre_populaire2,
+	#listepopulaires #cartechambre_populaire3{
+		width: 90%;
+
+	}
+
+	#listepopulaires #cartechambre_populaire1 a,
+	#listepopulaires #cartechambre_populaire2 a,
+	#listepopulaires #cartechambre_populaire3 a,
+	#listepopulaires #cartechambre_populaire1 #populaire1_description,
+	#listepopulaires #cartechambre_populaire2 #populaire2_description,
+	#listepopulaires #cartechambre_populaire3 #populaire3_description{
+		width: 65%;
+	}
+
+	#listepopulaires #cartechambre_populaire1 a img,
+	#listepopulaires #cartechambre_populaire2 a img,
+	#listepopulaires #cartechambre_populaire3 a img{
+		width: 99%;
+		max-width: 100%;
+	}
+
 	#listehebergements
 	{
 	width:calc(100% - 40px);
@@ -518,7 +517,7 @@ line-height:30px;
 	border: 5px solid transparent;
 	border-radius: 25px;
 	overflow: hidden;
-	box-shadow: 2px 2px 2px 2px #F2F2F2;
+	box-shadow: 2px 2px 2px 2px #e2e2e2;
 	
 	}
 	
@@ -553,12 +552,8 @@ line-height:30px;
 	padding: 10px;
 	}
 }
-@media screen and (max-width:758px)
+@media screen and (max-width:767px)
 {
-	body
-	{
-	overflow-x: hidden;	
-	}
 	#headerdesktop
 	{
 	display: none;
@@ -581,7 +576,7 @@ line-height:30px;
 	display: flex;
 	flex-direction: row;
 	}
-	aside
+
 	{
 	width: 100%;
 	display: flex;
@@ -658,30 +653,38 @@ line-height:30px;
 	#sectionhebergements
 	{
 	width: calc(100% - 20px);
-	margin:0px;
 	flex-direction: column-reverse;
 	justify-content: center;
 	}
 	#listepopulaires
 	{
 	width:100%;
-	margin: 0px;
-	padding: 10px;
-	display: flex;
-	justify-content:center;
-	align-items: flex-start;
-	flex-wrap: wrap;
 	border:none;
 	border-radius: 0;
-	justify-content: space-around;
-	
 	}
-	#cartechambre_populaire1,#cartechambre_populaire2,#cartechambre_populaire3
-	{
-	width:100%;
-	flex-basis: auto;
-	padding:0;
-	margin: 0 0 15px 0;
+
+	#listepopulaires #cartechambre_populaire1,
+	#listepopulaires #cartechambre_populaire2,
+	#listepopulaires #cartechambre_populaire3{
+		width: 90%;
+
+	}
+
+	#listepopulaires #cartechambre_populaire1 a,
+	#listepopulaires #cartechambre_populaire2 a,
+	#listepopulaires #cartechambre_populaire3 a,
+	#listepopulaires #cartechambre_populaire1 #populaire1_description,
+	#listepopulaires #cartechambre_populaire2 #populaire2_description,
+	#listepopulaires #cartechambre_populaire3 #populaire3_description{
+		width: 65%;
+	}
+
+	#listepopulaires #cartechambre_populaire1 a img,
+	#listepopulaires #cartechambre_populaire2 a img,
+	#listepopulaires #cartechambre_populaire3 a img{
+		width: 99%;
+		max-width: 100%;
+
 	}
 
 	#listehebergements
@@ -756,115 +759,5 @@ line-height:30px;
 	display: flex;
 	flex-direction: column; 
 	padding: 10px;
-	}
-}
-
-@media screen and (max-width: 1024px){
-	#listepopulaires aside #cartechambre_populaire1,
-	#listepopulaires aside #cartechambre_populaire2,
-	#listepopulaires aside #cartechambre_populaire3{
-		width: 90%;
-
-	}
-
-	#listepopulaires aside #cartechambre_populaire1 a,
-	#listepopulaires aside #cartechambre_populaire2 a,
-	#listepopulaires aside #cartechambre_populaire3 a,
-	#listepopulaires aside #cartechambre_populaire1 #populaire1_description,
-	#listepopulaires aside #cartechambre_populaire2 #populaire2_description,
-	#listepopulaires aside #cartechambre_populaire3 #populaire3_description{
-		width: 65%;
-	}
-
-	#listepopulaires aside #cartechambre_populaire1 a img,
-	#listepopulaires aside #cartechambre_populaire2 a img,
-	#listepopulaires aside #cartechambre_populaire3 a img{
-		width: 99%;
-		max-width: 100%;
-	}
-
-@media screen and (min-width:759px) and (max-width:1024px)
-{	
-		#listeactivites
-	{
-		 width:calc(100% - 40px);
-		 padding:10px;
-		 display: flex;
-		 flex-flow: row wrap;
-		 align-items: flex-start;
-		 justify-content: space-around;
-		 border-radius:15px;
-	}
-	#colonne1,#colonne3
-	{
-		height:100%;
-		width:45%;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content:space-around;
-		align-items: flex-start;
-	}
-	#colonne4,#colonne2
-	{
-		height:50%;
-		width:45%;
-	}
-
-	#carteactivite1,#carteactivite4
-	{
-		height:100%;
-		max-width: 100%;
-		overflow: hidden;
-		
-	}
-	#carteactivite2,#carteactivite3,#carteactivite5,#carteactivite6
-	{
-		height: 50%;
-		max-width: 100%;
-		overflow: hidden;
-	 }
-
-	.image_activites1,.image_activites4
-	{
-	height:100%;
-	max-height: 420px;
-	max-width: 100%;
-	object-fit:cover;
-	}
-
-	.image_activites2,.image_activites3,.image_activites5,.image_activites6
-	{
-	height:100%;
-	max-height:170px;
-	width: 100%;
-	object-fit:cover;
-	}
-
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1324px){
-	#listepopulaires aside {
-		justify-content: space-around;
-	}
-	#listepopulaires aside #cartechambre_populaire1,
-	#listepopulaires aside #cartechambre_populaire2,
-	#listepopulaires aside #cartechambre_populaire3{
-		width: calc(50% - 40px);
-	}
-
-	#listepopulaires aside #cartechambre_populaire1 a,
-	#listepopulaires aside #cartechambre_populaire2 a,
-	#listepopulaires aside #cartechambre_populaire3 a,
-	#listepopulaires aside #cartechambre_populaire1 #populaire1_description,
-	#listepopulaires aside #cartechambre_populaire2 #populaire2_description,
-	#listepopulaires aside #cartechambre_populaire3 #populaire3_description{
-		width: 50%;
-	}
-
-	#listepopulaires aside #cartechambre_populaire1 a img,
-	#listepopulaires aside #cartechambre_populaire2 a img,
-	#listepopulaires aside #cartechambre_populaire3 a img{
-		width: 99%;
-		max-width: 100%;
 	}
 }
